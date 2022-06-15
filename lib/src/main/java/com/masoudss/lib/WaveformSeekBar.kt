@@ -294,7 +294,7 @@ open class WaveformSeekBar @JvmOverloads constructor(
                     else 0F
 
                 if (waveHeight < waveMinHeight) waveHeight = waveMinHeight
-                if (waveHeight.isNaN()) waveHeight = 1f
+                if (waveHeight.isNaN()) waveHeight = 2F
 
                 val top: Float = when (waveGravity) {
                     WaveGravity.TOP -> paddingTop.toFloat() + wavePaddingTop
